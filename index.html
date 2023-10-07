@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilos.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <span id="sup-logo"><img src="images/codoacodo.png" id="logo"> Conf Bs As</span>
+    
+        <nav>
+            <ul class="lista-flex" style="margin-top: 1vw;color: rgb(184, 181, 181);"> 
+                <li><a style="color:white">La conferencia</a></li>
+                <li><a>Los oradores</a></li>
+                <li><a>El lugar y la fecha</a></li>
+                <li><a>Conviértete en orador</a></li>
+                <li><a style="color:greenyellow">Comprar tickets</a></li>
+                
+            </ul>
+        </nav>
+    
+   
+    
+</header>
+<body>
+
+    <div class="container-fluid">
+     
+         <!--Cajas izquierda y derecha -->
+         <div class="row" id="elemento-contenedor" style="color:white;height: 5vh;margin-top:-20px;z-index:10;">
+            <div class="col-6" style="z-index: 1;">
+            </div>
+            <div class="col-6" style="text-align:bottom;">
+                <div class="elemento-titulo">
+                    <h1>Conf Bs As</h1>
+                </div>
+            </div>
+            <div class="col-md-6" style="z-index: 1;">
+            </div>
+            <div class="col-md-6" id="txt-body" style="text-align: right;">
+                <span style="margin-top:">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencias de los expertos que están creando el futuro de Internet. Ven a conocer miembros del evento, a otros estudiantes Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!<br></span>
+                <div id="Botonescuerpo" style="display: inline-block; text-align: right;">
+                    <button style="background-color:transparent;color:white;border-color: rgb(255, 255, 255);border-radius: 5px;padding: 0.3vw;margin-right: 10px;">Quiero ser orador</button>
+                    <button style="background-color:transparent;color:rgb(255, 255, 255);border-color: rgb(0, 255, 0);background-color: green;border-radius: 5px;padding: 0.3vw;">Comprar tickets</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+      
+    <!-- ORADORES -->
+    <div class="container-fluid" style="color:rgb(0, 0, 0)">
+        <!-- CONOCER A LOS ORADORES -->
+        <div class="col-12" style="text-align: center;">
+            <h6 style="margin-top:-10px ;">CONOCE A LOS</h6>
+            <h1>Oradores</h1>
+        </div>
+        <!-- 3 IMAGENES -->
+        <div class="row justify-content-center">
+            <div class="col-2" id="imgorador" style=" " >
+                <img src="/images/steve.jpg" class="img_orador img-steve" style="width: 100%;">
+                <div class="container-fluid">
+                    <div class="languages">
+                        <span class="javascript">JavaScript</span>
+                        <span class="react">React</span>
+                    </div>
+                  
+                    <div class="lorem">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-2" id="imgorador">
+                <img src="/images/bill.jpg" class="img_orador">
+                <div class="container-fluid">
+                    <div class="languages">
+                        <span class="javascript">JavaScript</span>
+                        <span class="react">React</span>
+                    </div>
+                    
+                    <div class="lorem">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-2" id="imgorador">
+                <img src="/images/ada.jpeg" class="img_orador">
+                <div class="container-fluid">
+                    <div class="languages">
+                        <span class="negocios">Negocios</span>
+                        <span class="startups">Startups</span>
+                    </div>
+                    <div class="lorem">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Carrosel-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6" style="padding: 0px;">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/honolulu.jpg" alt="" class="d-block w-100" style="height: 20vw;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/hawaii2.jpg" alt="" class="d-block w-100"style="height: 20vw;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/hawaii3.jpg" alt="" class="d-blockasd w-100"style="height: 20vw;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6" style="padding: 0px;padding-top: 1vw; padding-left: 1vw; background-color: rgb(69, 65, 82); color: white;">
+                <p>Bs As - Octubre</p>
+                <p>Buenos Aires es la provincia y la localidad más grande el estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre los las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa sureña de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidado que cubre toda la ciudad (Aproximadamente 600 km2 de superficie)</p>
+                <p><button style="border-color: white; background-color: rgb(69, 65, 82); color: white;border-radius: 5px;">Conocé más</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!--ORADOR BODY-INFERIOR    -->
+    <div class="col-12" style="text-align: center;padding-top: 1VW;">
+        <h6>CONVIÉRTETE EN UN</h6>
+        <h1>ORADOR</h1>
+        <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+        <input value="Nombre" style="width: 10vw;padding-left: 0.5vw;"><input value="Apellido" style="width: 10vw;margin-left: 2vw;padding-left: 0.5vw"></br>
+        <textarea name="mensaje" style="width:22vw;margin-top: 1vw;height: 6vw;padding-left: 0.5vw;">Sobre qué quieres hablar?</textarea></br>
+        <button style="background-color: rgb(124, 194, 34);width: 22vw;height: 1.5vw;color: white;border-color:rgb(124, 194, 34);border-style: solid ;border-radius: 5px;">Enviar</button>
+    </div>
+    
+
+</div>
+</body>
+
+
+
+
+   
+
+<footer>
+    <div class="container-fluid2">
+        <ul class="lista">
+            <li class="lista-item"><a>Preguntas frecuentes</a></li>
+            <li class="lista-item"><a>Contáctenos</a></li>
+            <li class="lista-item"><a>Prensa</a></li>
+            <li class="lista-item"><a>Conferencias</a></li>
+            <li class="lista-item"><a>Términos y condiciones</a></li>
+            <li class="lista-item"><a>Privacidad</a></li>
+            <li class="lista-item"><a>Estudiantes</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+
+
+</html>

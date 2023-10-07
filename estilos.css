@@ -1,0 +1,192 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    padding-right: 5vw;
+}
+
+#sup-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+  
+}
+
+#logo {
+    width: 5vw;
+    height: 3vw;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Contenedor principal */
+#elemento-contenedor {
+    
+    margin-top:-20px;
+    background-image: url('images/ba1.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.elemento-titulo{
+    text-align: end;
+    margin-top: 10vw;
+}
+#txt-body {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative; 
+}
+
+#txt-body::after {
+    content: "";
+    background: inherit; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: -1;
+    border-radius: 5px;
+}
+
+
+#Botonescuerpo button {
+    margin-right: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.img-steve {
+    max-width: 100%;
+    height: auto;
+}
+/* Oradores */
+#imgorador {
+    margin: 20px;
+    text-align: center;
+    padding: 0px;
+    border: 1px solid #b8b8b8
+}
+
+.img_orador {
+    max-width: 100%;
+    height: auto;
+}
+
+.javascript{
+    background-color: rgb(231, 201, 26);
+    padding: 0.2vw;
+    border-radius: 8px;
+}
+.react{
+    background-color: rgb(12, 147, 165);
+    color: white;   
+    padding: 0.2vw;
+    border-radius: 8px;
+}
+.negocios{
+    background-color: #333;
+    color: white;
+    padding: 0.2vw;
+    border-radius: 8px;
+}
+.startups{
+    background-color: red;
+    color: white;
+    padding: 0.2vw;
+    border-radius: 8px;
+}
+.lorem {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Carrosel */
+#carouselExample {
+    width: 100%;
+    
+}
+
+footer {
+    background-color: #076d70;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.lista-item {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.lista-item:last-child {
+    margin-right: 0; 
+}
+
+.lista-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.lista-centrada {
+    text-align: center; 
+}
+
+
