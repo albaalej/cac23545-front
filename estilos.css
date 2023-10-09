@@ -74,13 +74,12 @@ a {
 }
 
 .elemento-titulo{
-    text-align: end;
+    text-align: start;
     margin-top: 10vw;
 }
 #txt-body {
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 20px;
     border-radius: 5px;
     position: relative; 
 }
