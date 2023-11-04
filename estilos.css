@@ -250,5 +250,173 @@ footer {
         padding: 2vw;
         text-align: center;
     }
-   
+    .mobile-menu-button {
+        display: none;
+    }
+
+    /* Styles for the navigation menu */
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+}
+.mobile-menu-button {
+    display: none;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    /* Hide the regular menu and display the mobile menu button */
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Styles for the mobile dropdown menu */
+    .mobile-menu {
+        display: none;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sup-logo {
+    display: flex;
+    align-items: center;
+}
+
+#sup-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the mobile menu button */
+.mobile-menu-button {
+    display: none;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    /* Hide the regular menu and display the mobile menu button */
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Styles for the mobile dropdown menu */
+    .mobile-menu {
+        display: none;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Estilos para el botón del menú móvil */
+.mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .lista-flex {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Cambiar a dirección de columna */
+        align-items: flex-start; /* Alinear a la izquierda */
+    }
+
+    #sup-logo {
+        margin-bottom: 10px; /* Agregar margen inferior entre el logo y el texto */
+    }
+
+    /* Restaurar estilos para el botón del menú móvil */
+    .mobile-menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Estilos para la lista de navegación móvil */
+    .mobile-menu {
+        display: none;
+    }
 }
