@@ -29,8 +29,8 @@
 
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-4">
-				<div class="box"> 
+			<div class="col-3">
+				<div class="box border border-primary" > 
 					<p><b>Estudiante</b></p>
 					<p>Tienen un descuento</p>
 
@@ -39,8 +39,8 @@
 					<p>*Presentar documentación</p>
 				</div>
 			</div>
-			<div class="col-4">
-				<div class="box">
+			<div class="col-3">
+				<div class="box border border-success">
 					<p><b>Trainee</b></p>
 					<p>Tienen un descuento</p>
 
@@ -49,8 +49,8 @@
 					<p>*Presentar documentación</p>
 				</div>
 			</div>
-			<div class="col-4">
-				<div class="box">
+			<div class="col-3">
+				<div class="box border border-warning">
 					<p><b>Junior</b></p>
 					<p>Tienen un descuento</p>
 
@@ -61,50 +61,101 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div style="padding-bottom:20px;justify-content:center;" class="row justify-content-right col-6" >
 	    <div class="lista-centrada">
 	        <p style="font-size:1em;">VENTA</p>
-	        <p style="font-size: 2em;" ><b><span id="precioTicket">VALOR DE TICKET $200 </span></b></p>
+	        <p style="font-size: 2em;" ><b>VALOR DE TICKET: $<span id="precioTicket">200</span></b></p>
 	    </div>
 	    <div class="container lista-centrada">
-	        <input placeholder="Nombre" class="input-form">
-	        <input placeholder="Apellido" class="input-form">
-	        <input placeholder="Correo" class="input-form" style="width: 98%;">
-	        
 			<div class="flex-container">
-	        	<p>
-	            	<span > Cantidad </span>
-	            	<input placeholder="Cantidad" class="input-form">
-	            </p>	
-	        	<p>
-	        		<label class="text2"> Categoria </label>           
-	            	<select class="input-form" id="categoria" onchange="CalcularPrecioFinal()">
+				<div class="input-field">
+					<input placeholder="Nombre" class="input-form" style="width: 100%;">
+				</div>
+				<div class="input-field">
+					<input placeholder="Apellido" class="input-form" style="width: 100%;">
+					
+				</div>
+			</div>
+			<input placeholder="Correo" class="input-form" style="width: 100%;">
+			
+	        <div class="flex-container">
+				<div class="input-field">
+					<label style="width: 100%;text-align:left;"> Cantidad </label>
+				</div>
+				<div class="input-field">
+					<label class="text2" style="width: 100%;text-align:left;"> Categoria </label>  
+					
+				</div>
+			</div>
+
+			<div class="flex-container">
+				<div class="input-field">
+					<input style="width: 100%;"placeholder="Cantidad" class="input-form" id="cantidad" value="1" type="number"  onclick="validarCantidad()">
+				</div>
+				<div class="input-field">
+					<select class="input-form" style="width: 100%;" id="categoria" onchange="CalcularPrecioFinal()">
 	            		<option >Seleccionar... </option>
 	                	<option value="0.2">Estudiante</option>
 	                	<option value="0.5">Trainee</option>
 	                	<option value="0.75">Junior</option>
-	            	</select> 	
-	        	</p>
-        
-	            
-	        </div>
-	        <p>Total a Pagar:<span id="precioFinal"> $</span></p>
-	        <button class="btn btn-primary">Borrar</button>
-	        <button class="btn btn-primary">Resumen</button>
+	            	</select> 
+					
+				</div>
+			</div>
+	        <p class="input-form" style="background-color:LightSteelBlue;color:rgb(50, 50, 202);text-align:left;padding-left:2vw;" >Total a Pagar: $<span id="precioFinal" style="font-size:1.5em" ></span></p>
+
+			<div class="flex-container">
+				<div class="input-field">
+					<button class="btn text-white" style="background-color:yellowgreen;width:100%">Borrar</button>
+				</div>
+				<div class="input-field">
+					<button class="btn text-white" style="background-color:yellowgreen;width:100%">Resumen</button>
+				
+				</div>
+			</div>
+	        
+	        
+
+
+			
+	        
 	    </div>
 	</div>
 
 
 </body>
+<footer>
+    <div class="container-fluid2">
+        <ul class="lista">
+            <li class="lista-item"><a>Preguntas frecuentes</a></li>
+            <li class="lista-item"><a>Contáctenos</a></li>
+            <li class="lista-item"><a>Prensa</a></li>
+            <li class="lista-item"><a>Conferencias</a></li>
+            <li class="lista-item"><a>Términos y condiciones</a></li>
+            <li class="lista-item"><a>Privacidad</a></li>
+            <li class="lista-item"><a>Estudiantes</a></li>
+        </ul>
+    </div>
+
+</footer>
 
 <script>
 	function CalcularPrecioFinal(){
-		const precioTicket = parseFloat(document.getElementById ('precioTicket').textContent);
+		const precioTicket = parseInt(document.getElementById ('precioTicket').textContent);
 		const categoria = parseFloat(document.getElementById ('categoria').value);
-
+		const cantidad = parseInt(document.getElementById ('cantidad').value);
+		
+		if (isNaN(cantidad) || cantidad < 1) {
+			alert("La cantidad de tickets debe ser 1 o superior");
+			return;
+		}
+		
 		const precioFinal2 = precioTicket * categoria;
 
-		document.getElementById ('precioFinal').textContent = precioFinal2;
+		precioFinal3 = cantidad * precioFinal2
+		document.getElementById ('precioFinal').textContent = precioFinal3;
 	}
+	
+
 </script>
 </html>
