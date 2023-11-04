@@ -29,7 +29,7 @@
 
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-3">
+			<div class="col-12 col-md-4">
 				<div class="box border border-primary" > 
 					<p><b>Estudiante</b></p>
 					<p>Tienen un descuento</p>
@@ -39,7 +39,7 @@
 					<p>*Presentar documentación</p>
 				</div>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-md-4">
 				<div class="box border border-success">
 					<p><b>Trainee</b></p>
 					<p>Tienen un descuento</p>
@@ -49,7 +49,7 @@
 					<p>*Presentar documentación</p>
 				</div>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-md-4">
 				<div class="box border border-warning">
 					<p><b>Junior</b></p>
 					<p>Tienen un descuento</p>
@@ -61,69 +61,54 @@
 			</div>
 		</div>
 	</div>
-	<div style="padding-bottom:20px;justify-content:center;" class="row justify-content-right col-6" >
-	    <div class="lista-centrada">
-	        <p style="font-size:1em;">VENTA</p>
-	        <p style="font-size: 2em;" ><b>VALOR DE TICKET: $<span id="precioTicket">200</span></b></p>
-	    </div>
-	    <div class="container lista-centrada">
+	<!-- TODO LO QUE VIENE DEBAJO, TIENE QUE TENER EL MISMO ANCHO QUE LAS 3 CAJAS ANTERIORES -->
+	<div class="container" style="padding-bottom:20px;justify-content:center;">
+		<div class="lista-centrada">
+			<p style="font-size:1em;">VENTA</p>
+			<p style="font-size: 2em;" ><b>VALOR DE TICKET: $<span id="precioTicket">200</span></b></p>
+		</div>
+		<div class="container lista-centrada">
 			<div class="flex-container">
 				<div class="input-field">
 					<input placeholder="Nombre" class="input-form" style="width: 100%;">
 				</div>
 				<div class="input-field">
 					<input placeholder="Apellido" class="input-form" style="width: 100%;">
-					
 				</div>
 			</div>
 			<input placeholder="Correo" class="input-form" style="width: 100%;">
-			
-	        <div class="flex-container">
+			<div class="flex-container">
 				<div class="input-field">
 					<label style="width: 100%;text-align:left;"> Cantidad </label>
 				</div>
 				<div class="input-field">
 					<label class="text2" style="width: 100%;text-align:left;"> Categoria </label>  
-					
 				</div>
 			</div>
-
 			<div class="flex-container">
 				<div class="input-field">
 					<input style="width: 100%;"placeholder="Cantidad" class="input-form" id="cantidad" value="1" type="number"  onclick="validarCantidad()">
 				</div>
 				<div class="input-field">
 					<select class="input-form" style="width: 100%;" id="categoria" onchange="CalcularPrecioFinal()">
-	            		<option >Seleccionar... </option>
-	                	<option value="0.2">Estudiante</option>
-	                	<option value="0.5">Trainee</option>
-	                	<option value="0.75">Junior</option>
-	            	</select> 
-					
+						<option>Seleccionar... </option>
+						<option value="0.2">Estudiante</option>
+						<option value="0.5">Trainee</option>
+						<option value="0.75">Junior</option>
+					</select> 
 				</div>
 			</div>
-	        <p class="input-form" style="background-color:LightSteelBlue;color:rgb(50, 50, 202);text-align:left;padding-left:2vw;" >Total a Pagar: $<span id="precioFinal" style="font-size:1.5em" ></span></p>
-
+			<p class="input-form" style="background-color:LightSteelBlue;color:rgb(50, 50, 202);text-align:left;padding-left:2vw;" >Total a Pagar: $<span id="precioFinal" style="font-size:1.5em" ></span></p>
 			<div class="flex-container">
 				<div class="input-field">
 					<button class="btn text-white" style="background-color:yellowgreen;width:100%">Borrar</button>
 				</div>
 				<div class="input-field">
 					<button class="btn text-white" style="background-color:yellowgreen;width:100%">Resumen</button>
-				
 				</div>
 			</div>
-	        
-	        
-
-
-			
-	        
-	    </div>
+		</div>
 	</div>
-
-
-</body>
 <footer>
     <div class="container-fluid2">
         <ul class="lista">

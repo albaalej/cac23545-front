@@ -239,3 +239,16 @@ footer {
     flex: 1;
     margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+ 
+    .col-3 {
+        width: 10%;
+    }
+    .box {
+        margin: 10px 0; /* Add spacing between the boxes */
+        padding: 2vw;
+        text-align: center;
+    }
+   
+}
